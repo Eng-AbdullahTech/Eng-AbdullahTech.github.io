@@ -1,108 +1,115 @@
-<!DOCTYPE html><html lang="ar" dir="rtl">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abdullah Tech - الصفحة الرئيسية</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eng. Abdullah | Tech</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');body {
-  margin: 0;
-  font-family: 'Cairo', sans-serif;
-  background: linear-gradient(to bottom right, #1a0033, #330066);
-  color: #eee;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-header {
-  text-align: center;
-  padding: 60px 20px 20px;
-}
+    :root {
+      --primary-color: #4ee1ff;
+      --secondary-color: #0f2027;
+      --background-color: #203a43;
+      --text-color: #e0e6f0;
+    }
 
-.logo {
-  font-size: 3rem;
-  color: #bb33ff;
-  text-shadow: 0 0 15px #bb33ff;
-  margin-bottom: 15px;
-}
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      font-family: 'Roboto', sans-serif;
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
 
-.subtitle {
-  font-size: 1.4rem;
-  color: #ddd;
-  margin-bottom: 30px;
-}
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3.5rem;
+      color: var(--primary-color);
+      text-shadow: 0 0 10px var(--primary-color);
+      letter-spacing: 6px;
+      margin-bottom: 15px;
+      user-select: none;
+    }
 
-.highlight-box {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid #bb33ff88;
-  box-shadow: 0 0 15px #bb33ff55;
-  border-radius: 15px;
-  padding: 20px 30px;
-  max-width: 350px;
-  margin-bottom: 40px;
-}
+    main {
+      background-color: rgba(30, 50, 80, 0.85);
+      padding: 30px 40px;
+      border-radius: 15px;
+      max-width: 480px;
+      box-shadow: 0 0 30px #4ee1ff88;
+    }
 
-.highlight-box h2 {
-  color: #bb33ff;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
-}
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
 
-.stats {
-  display: flex;
-  justify-content: space-around;
-  color: #fff;
-  font-size: 1.1rem;
-}
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 35px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      flex-wrap: wrap;
+    }
 
-.stat {
-  text-align: center;
-}
+    .social-links a {
+      color: var(--primary-color);
+      text-decoration: none;
+      padding: 8px 14px;
+      border: 2px solid var(--primary-color);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      user-select: none;
+    }
 
-.stat span {
-  display: block;
-  color: #bb33ff;
-  font-size: 1.4rem;
-  margin-bottom: 5px;
-  text-shadow: 0 0 5px #bb33ff;
-}
+    .social-links a:hover {
+      background-color: var(--primary-color);
+      color: var(--secondary-color);
+      box-shadow: 0 0 12px var(--primary-color);
+      text-decoration: none;
+    }
 
-@media (max-width: 600px) {
-  .logo {
-    font-size: 2.2rem;
-  }
-  .highlight-box {
-    width: 85%;
-  }
-  .stats {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
+    @media (max-width: 520px) {
+      header h1 {
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+      }
 
+      main {
+        max-width: 90%;
+        padding: 20px 25px;
+      }
+
+      .social-links {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo">Abdullah Tech</div>
-    <div class="subtitle">تطبيقات تقنية باحترافية عالية</div>
-  </header>  <div class="highlight-box">
-    <h2>الإنجازات</h2>
-    <div class="stats">
-      <div class="stat">
-        <span>+9000</span>
-        متابع
-      </div>
-      <div class="stat">
-        <span>+1400</span>
-        تطبيق منشور
-      </div>
-      <div class="stat">
-        <span>+6700</span>
-        تقييم إيجابي
-      </div>
+    <h1>Eng. Abdullah | Tech</h1>
+  </header>
+  <main>
+    <p>
+      أنا تقني أجهزة طبية أمتلك خبرة في الحاسبات والإلكترونيات وخدمات النمو الرقمي. شغوف بالتقنية والابتكار في المجال التقني وأسعى دائمًا لتطوير مهاراتي في الأنظمة الذكية والتحكم.
+    </p>
+    <div class="social-links">
+      <a href="https://instagram.com/1kun" target="_blank" rel="noopener noreferrer">إنستغرام: 1kun</a>
+      <a href="https://t.me/LLLLLH" target="_blank" rel="noopener noreferrer">تيليجرام: LLLLLH</a>
     </div>
-  </div>
+  </main>
 </body>
 </html>
