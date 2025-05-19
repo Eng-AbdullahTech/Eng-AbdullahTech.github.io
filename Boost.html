@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abdullah Hassan - عروض الانستكرام</title>
+  <title>عروض الانستكرام</title>
   <style>
     body {
       margin: 0;
@@ -17,35 +17,56 @@
       min-height: 100vh;
       text-align: center;
     }
+
     .card {
+      position: relative;
       background: rgba(0, 0, 0, 0.5);
       border: 1px solid rgba(255, 255, 255, 0.2);
       border-radius: 20px;
       padding: 40px 30px;
       max-width: 600px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      overflow: hidden;
     }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 15px;
-      font-weight: bold;
+
+    .card::before {
+      content: "@1kun";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-20deg);
+      font-size: 5em;
+      color: rgba(255, 255, 255, 0.06);
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 0;
     }
+
+    .card * {
+      position: relative;
+      z-index: 1;
+    }
+
     h2 {
       font-size: 1.8em;
       color: #ffd700;
       margin-bottom: 20px;
     }
+
     p {
       font-size: 1.2em;
       margin: 12px 0;
     }
+
     strong {
       font-weight: bold;
       color: #ffffff;
     }
+
     .button {
       margin-top: 30px;
     }
+
     .button a {
       text-decoration: none;
       background-color: #ffcc00;
@@ -57,6 +78,7 @@
       transition: background-color 0.3s ease;
       display: inline-block;
     }
+
     .button a:hover {
       background-color: #e6b800;
     }
@@ -64,7 +86,6 @@
 </head>
 <body>
   <div class="card">
-    <h1>Abdullah Hassan</h1>
     <h2>عروض الانستكرام</h2>
     <p><strong>متابعين ثابتين:</strong> كل 1k متابع بـ <strong>$5</strong> مع تعويض لمدة سنة</p>
     <p><strong>متابعين حقيقي (عراقيين):</strong> كل 1k بـ <strong>$10</strong> "يشوفون الستوري ويتفاعلون بحسابك"</p>
