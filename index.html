@@ -1,110 +1,118 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eng-AbdullahTech - الصفحة الشخصية</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Eng-AbdullahTech - الصفحة الشخصية</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-    :root {
-      --primary-color: #00bfa6;
-      --text-color: #1d1d1f;
-      --bg-color: #f8f8f8;
-      --card-color: #ffffff;
-    }
+  :root {
+    --primary-color: #00bfa6;
+    --text-color: #1d1d1f;
+    --bg-color: #ffffff;
+    --card-bg: #fff;
+    --card-shadow: rgba(0, 0, 0, 0.05);
+  }
 
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: var(--bg-color);
-      font-family: 'Roboto', sans-serif;
-      color: var(--text-color);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+  }
 
+  header h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    color: var(--primary-color);
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+  }
+
+  main {
+    background-color: var(--card-bg);
+    padding: 35px 50px;
+    border-radius: 14px;
+    max-width: 480px;
+    box-shadow: 0 0 25px var(--card-shadow);
+    transition: box-shadow 0.3s ease;
+  }
+
+  main:hover {
+    box-shadow: 0 0 40px var(--primary-color);
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    font-weight: 500;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    flex-wrap: wrap;
+  }
+
+  .social-links a {
+    color: white;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+  }
+
+  .social-links a:hover {
+    background-color: #009e8b;
+    box-shadow: 0 0 15px var(--primary-color);
+  }
+
+  @media (max-width: 520px) {
     header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3.2rem;
-      color: var(--primary-color);
-      letter-spacing: 4px;
-      margin-bottom: 15px;
+      font-size: 2.2rem;
+      letter-spacing: 2px;
     }
 
     main {
-      background-color: var(--card-color);
-      padding: 30px 40px;
-      border-radius: 12px;
-      max-width: 480px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-    }
-
-    p {
-      font-size: 1.1rem;
-      line-height: 1.7;
-      margin-bottom: 25px;
-      font-weight: 500;
+      max-width: 90%;
+      padding: 25px 30px;
     }
 
     .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      font-size: 1rem;
-      font-weight: 600;
-      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 15px;
     }
-
-    .social-links a {
-      color: white;
-      background-color: var(--primary-color);
-      text-decoration: none;
-      padding: 10px 16px;
-      border-radius: 8px;
-      transition: 0.3s ease;
-    }
-
-    .social-links a:hover {
-      background-color: #009e8b;
-    }
-
-    @media (max-width: 520px) {
-      header h1 {
-        font-size: 2.3rem;
-        letter-spacing: 2px;
-      }
-
-      main {
-        max-width: 90%;
-        padding: 20px 25px;
-      }
-
-      .social-links {
-        flex-direction: column;
-        gap: 15px;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
-  <header>
-    <h1>Eng-AbdullahTech</h1>
-  </header>
-  <main>
-    <p>
-      أنا تقني أجهزة طبية أمتلك خبرة في الحاسبات، الإلكترونيات، وخدمات النمو الرقمي مثل تعزيز التفاعل على وسائل التواصل الاجتماعي.
-      شغوف بالتقنية والابتكار، وأسعى باستمرار لتطوير مهاراتي في الأنظمة الذكية وتقنيات التحكم.
-    </p>
-    <div class="social-links">
-      <a href="https://instagram.com/1kun" target="_blank" rel="noopener noreferrer">إنستغرام: 1kun</a>
-      <a href="https://t.me/LLLLLH" target="_blank" rel="noopener noreferrer">تيليجرام: LLLLLH</a>
-    </div>
-  </main>
+<header>
+  <h1>Eng-AbdullahTech</h1>
+</header>
+<main>
+  <p>
+    أنا تقني أجهزة طبية أمتلك خبرة في الحاسبات، الإلكترونيات، وخدمات النمو الرقمي مثل تعزيز التفاعل على وسائل التواصل الاجتماعي.
+    شغوف بالتقنية والابتكار، وأسعى باستمرار لتطوير مهاراتي في الأنظمة الذكية وتقنيات التحكم.
+  </p>
+  <div class="social-links">
+    <a href="https://instagram.com/1kun" target="_blank" rel="noopener noreferrer">إنستغرام: 1kun</a>
+    <a href="https://t.me/LLLLLH" target="_blank" rel="noopener noreferrer">تيليجرام: LLLLLH</a>
+  </div>
+</main>
 </body>
 </html>
